@@ -1,0 +1,293 @@
+.page2 {
+    width: 100%;
+    min-width: 1440px;
+    height: 100vh;
+    min-height: 1024px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgba(254, 254, 254, 1.0);
+    zoom: 86%;
+}
+
+a {
+    text-decoration: none
+}
+
+div {
+    -webkit-text-size-adjust: none
+}
+
+.page2 .day1 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 196px;
+    height: 278px;
+    width: 545px;
+    position: absolute;
+    margin: 0;
+    left: 523px
+}
+
+.page2 .day1 .day11995 {
+    background-color: rgba(215, 215, 215, 1.0);
+    top: 0;
+    height: 223px;
+    width: 428px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.page2 .day1 .day11995 .mask {
+    background-color: rgba(215, 215, 215, 1.0);
+    top: 0;
+    height: 223px;
+    width: 428px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    border-radius: 8px
+}
+
+.page2 .day1 .day11995 .day119951 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: -18px;
+    height: 287px;
+    width: 443px;
+    position: absolute;
+    margin: 0;
+    left: -7px
+}
+
+.page2 .day1 .day11 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 85px;
+    height: auto;
+    width: 414px;
+    position: absolute;
+    margin: 0;
+    left: 131px;
+    font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+    font-size: 36.0px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+    letter-spacing: .85px;
+    line-height: 44.0px
+}
+
+.page2 .day2 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 538px;
+    height: 281px;
+    width: 556px;
+    position: absolute;
+    margin: 0;
+    left: 166px
+}
+
+.page2 .day2 .day21995 {
+    background-color: rgba(215, 215, 215, 1.0);
+    top: 0;
+    height: 227px;
+    width: 411px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.page2 .day2 .day21995 .mask1 {
+    background-color: rgba(215, 215, 215, 1.0);
+    top: 0;
+    height: 227px;
+    width: 411px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    border-radius: 8px
+}
+
+.page2 .day2 .day21995 .day219951 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: -2px;
+    height: 307px;
+    width: 448px;
+    position: absolute;
+    margin: 0;
+    left: -2px
+}
+
+.page2 .day2 .day21 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 85px;
+    height: auto;
+    width: 413px;
+    position: absolute;
+    margin: 0;
+    left: 144px;
+    font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+    font-size: 36.0px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+    letter-spacing: .85px;
+    line-height: 44.0px
+}
+
+.page2 .day3 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 538px;
+    height: 281px;
+    width: 556px;
+    position: absolute;
+    margin: 0;
+    left: 884px
+}
+
+.page2 .day3 .day31995 {
+    background-color: rgba(215, 215, 215, 1.0);
+    top: 0;
+    height: 223px;
+    width: 416px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.page2 .day3 .day31995 .mask2 {
+    background-color: rgba(215, 215, 215, 1.0);
+    top: 0;
+    height: 223px;
+    width: 416px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    border-radius: 8px
+}
+
+.page2 .day3 .day31995 .day319951 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: -12px;
+    height: 265px;
+    width: 425px;
+    position: absolute;
+    margin: 0;
+    left: -5px
+}
+
+.page2 .day3 .day31 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 88px;
+    height: auto;
+    width: 404px;
+    position: absolute;
+    margin: 0;
+    left: 153px;
+    font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+    font-size: 36.0px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+    letter-spacing: .85px;
+    line-height: 44.0px
+}
+
+.page2 .a1995 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: -5px;
+    height: auto;
+    width: 243px;
+    position: absolute;
+    margin: 0;
+    left: 600px;
+    font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+    font-size: 64.0px;
+    color: rgba(1, 1, 1, 1.0);
+    text-align: center;
+    letter-spacing: .85px;
+    line-height: 78.0px
+}
+
+.page2 .leftarrow {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 8px;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    margin: 0;
+    left: 14px
+}
+
+.page2 .time-fest-logo {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 8px;
+    height: 96px;
+    width: 179px;
+    position: absolute;
+    margin: 0;
+    left: 1248px
+}
+
+.anima-animate-appear {
+    opacity: 0;
+    display: block;
+    -webkit-animation: anima-reveal .3s ease-in-out 1 normal forwards;
+    -moz-animation: anima-reveal .3s ease-in 1 normal forwards;
+    -o-animation: anima-reveal .3s ease-in-out 1 normal forwards;
+    animation: anima-reveal .3s ease-in-out 1 normal forwards
+}
+
+.anima-animate-disappear {
+    opacity: 1;
+    display: block;
+    -webkit-animation: anima-reveal .3s ease-in-out 1 reverse forwards;
+    -moz-animation: anima-reveal .3s ease-in 1 normal forwards;
+    -o-animation: anima-reveal .3s ease-in-out 1 reverse forwards;
+    animation: anima-reveal .3s ease-in-out 1 reverse forwards
+}
+
+.anima-animate-nodelay {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0
+}
+
+@-webkit-keyframes anima-reveal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes anima-reveal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes anima-reveal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes anima-reveal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}

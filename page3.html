@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="shortcut icon" type=image/png href=img/TimeFestLogo.png>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=1440px, maximum-scale=1.0">
+    
+</head>
+
+<body style="margin: 0;
+ background: rgba(254, 254, 254, 1.0);">
+    <input type=hidden id=anPageName name=page value=page3>
+    <div class=page3>
+        <div style="width: 1440px; height: 100%; position:relative; margin:auto;">
+            <div class=day1>DAY 1</div><div class=video style="width: 733px; height: 100%; position:relative; margin:auto;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tHGZEHv-IHg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+                <div class=rectangle2></div>
+            </a>
+            
+                <div class=see-others-and-add-y>See others and add
+                    <br>your own experience</div>
+            
+            <div class=the25-th-anniversary>The 25th anniversary of the first Festival was celebrated and saw the return of the two performers from the first event - Keith Christmas and Al Stewart. Demand for the tickets had never been so intense and the event was completely sold out within four weeks of the ticket release date.
+                <br>
+                <br>
+                <br>
+            </div>
+            <a href=page2.html><img class=leftarrow src=img/leftarrow.png></a><a href=homepage.html><img class=time-fest-logo src=img/TimeFestLogo.png></div>
+    </div>
+    <script>
+        anima_isHidden = function (e) {
+            if (!(e instanceof HTMLElement)) return !1;
+            if (getComputedStyle(e).display == "none") return !0;
+            else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+            return !1
+        };
+        anima_loadAsyncSrcForTag = function (tag) {
+            var elements = document.getElementsByTagName(tag);
+            var toLoad = [];
+            for (var i = 0; i < elements.length; i++) {
+                var e = elements[i];
+                var src = e.getAttribute("src");
+                var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                if (loaded) continue;
+                var asyncSrc = e.getAttribute("anima-src");
+                if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                if (anima_isHidden(e)) continue;
+                toLoad.push(e)
+            }
+            toLoad.sort(function (a, b) {
+                return anima_getTop(a) - anima_getTop(b)
+            });
+            for (var i = 0; i < toLoad.length; i++) {
+                var e = toLoad[i];
+                var asyncSrc = e.getAttribute("anima-src");
+                e.setAttribute("src", asyncSrc)
+            }
+        };
+        anima_pauseHiddenVideos = function (tag) {
+            var elements = document.getElementsByTagName("video");
+            for (var i = 0; i < elements.length; i++) {
+                var e = elements[i];
+                var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                var isHidden = anima_isHidden(e);
+                if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                    e.play()
+                } else if (isPlaying && isHidden) {
+                    e.pause()
+                }
+            }
+        };
+        anima_loadAsyncSrc = function (tag) {
+            anima_loadAsyncSrcForTag("img");
+            anima_loadAsyncSrcForTag("iframe");
+            anima_loadAsyncSrcForTag("video");
+            anima_pauseHiddenVideos()
+        };
+        var anima_getTop = function (e) {
+            var top = 0;
+            do {
+                top += e.offsetTop || 0;
+                e = e.offsetParent
+            } while (e);
+            return top
+        };
+        anima_loadAsyncSrc();
+        anima_old_onResize = window.onresize;
+        anima_new_onResize = undefined;
+        anima_updateOnResize = function () {
+            if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                anima_new_onResize = function (x) {
+                    if (anima_old_onResize != undefined) anima_old_onResize(x);
+                    anima_loadAsyncSrc()
+                }
+                window.onresize = anima_new_onResize;
+                setTimeout(function () {
+                    anima_updateOnResize()
+                }, 3000)
+            }
+        };
+        anima_updateOnResize();
+        setTimeout(function () {
+            anima_loadAsyncSrc()
+        }, 200)
+    </script>
+    
+</body>
+
+</html>
