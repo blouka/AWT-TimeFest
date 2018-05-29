@@ -103,7 +103,7 @@ header h1 {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: #1f242d;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -234,8 +234,8 @@ header h1 {
   background: #ededed;
   border-radius: 0.25em;
   padding: 1em;
-  -webkit-box-shadow: 0 3px 0 #d7e4ed;
-          box-shadow: 0 3px 0 #d7e4ed;
+  -webkit-box-shadow: 0 3px 0 #1f242d;
+          box-shadow: 0 3px 0 #1f242d;
 }
 
 .cd-timeline__content:after {
