@@ -166,15 +166,15 @@ header h1 {
 }
 
 .cd-timeline__img.cd-timeline__img--picture {
-  background: #75ce66;
+  background: #f42829;
 }
 
 .cd-timeline__img.cd-timeline__img--movie {
-  background: #c03b44;
+  background: #f5e22c;
 }
 
 .cd-timeline__img.cd-timeline__img--location {
-  background: #f0ca45;
+  background: #f59a27;
 }
 
 @media only screen and (min-width: 1170px) {

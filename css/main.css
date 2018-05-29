@@ -86,7 +86,7 @@ div {
     -webkit-animation: anima-reveal .3s ease-in-out 1 normal forwards;
     -moz-animation: anima-reveal .3s ease-in 1 normal forwards;
     -o-animation: anima-reveal .3s ease-in-out 1 normal forwards;
-    animation: anima-reveal .3s ease-in-out 1 normal forwards
+    animation: anima-reveal .3s ease-in-out 1 normal forwards;
 }
 
 .anima-animate-disappear {
@@ -95,14 +95,14 @@ div {
     -webkit-animation: anima-reveal .3s ease-in-out 1 reverse forwards;
     -moz-animation: anima-reveal .3s ease-in 1 normal forwards;
     -o-animation: anima-reveal .3s ease-in-out 1 reverse forwards;
-    animation: anima-reveal .3s ease-in-out 1 reverse forwards
+    animation: anima-reveal .3s ease-in-out 1 reverse forwards;
 }
 
 .anima-animate-nodelay {
     -webkit-animation-delay: 0;
     -moz-animation-delay: 0;
     -o-animation-delay: 0;
-    animation-delay: 0
+    animation-delay: 0;
 }
 
 @-webkit-keyframes anima-reveal {
