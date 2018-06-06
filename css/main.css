@@ -32,6 +32,10 @@ header a {
 
 #upload {display: none;}
 
+#uploadButton {
+    margin-top: 500px
+}
+
 #upload img {
     width: 50%;
     position: absolute;
@@ -452,6 +456,7 @@ textarea {
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
+    border-radius: 10px;
     text-align: center;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
@@ -487,7 +492,7 @@ textarea {
 /* Aylen */
 .button.button--aylen {
 	background: #fff;
-	color: #37474f;
+	color: #4a374f;
 	overflow: hidden;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
@@ -511,10 +516,10 @@ textarea {
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
 .button--aylen::before {
-	background: #7986cb;
+	background: #be79cb;
 }
 .button--aylen::after {
-	background: #3f51b5;
+	background: #db158f;
 }
 .button--aylen:hover {
 	color: #fff;
