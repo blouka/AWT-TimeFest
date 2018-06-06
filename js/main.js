@@ -38,19 +38,25 @@ uploadLink.click(function () {
     $(".flex-item").fadeOut(150);
     timeline.fadeOut(150);
     timelineDay.fadeOut(150);
+     dayOne.fadeOut(150);
+    dayTwo.fadeOut(150);
+    dayThree.fadeOut(150);
 });
 
 $(".return").click(function () {
     dayOne.fadeOut(150);
     dayTwo.fadeOut(150);
     dayThree.fadeOut(150);
-    timelineDay.fadeIn(150);
+    timelineDay.fadeIn(250);
 })
 festivalsLink.click(function () {
     $(".flex-item").fadeIn(250);
     upload.fadeOut(150);
     timeline.fadeOut(150);
     timelineDay.fadeOut(150);
+     dayOne.fadeOut(150);
+    dayTwo.fadeOut(150);
+    dayThree.fadeOut(150);
 });
 
 timelineLinks.click(function (){
@@ -154,17 +160,17 @@ timelineLinks.click(function (){
 
 dayOneButton.click(function () {
    timelineDay.fadeOut(150);
-    dayOne.fadeIn(150);
+    dayOne.fadeIn(250);
 });
 
 dayTwoButton.click(function () {
    timelineDay.fadeOut(150);
-    dayTwo.fadeIn(150);
+    dayTwo.fadeIn(250);
 });
 
 dayThreeButton.click(function () {
    timelineDay.fadeOut(150);
-    dayThree.fadeIn(150);
+    dayThree.fadeIn(250);
 });
 
 $(".flex-item").click(function () {
