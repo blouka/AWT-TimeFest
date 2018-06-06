@@ -12,11 +12,13 @@ var festivalsLink = $("#festivalsLink");
 // Pause and play the video, and change the button text
 function myFunction() {
     if (video.paused) {
+        video.playbackRate = 0.5;
         video.play();
     } else {
         video.pause();
     }
 }
+$('img').on('dragstart', function(event) { event.preventDefault(); });
 
 enterButton.click(function (){
     fullscreen.hide();
@@ -34,6 +36,11 @@ uploadLink.click(function () {
 festivalsLink.click(function () {
     $(".flex-item").fadeIn(250);
     upload.fadeOut(150);
+});
+
+$(".flex-item").click(function(){
+   $(".flex-item").fadeOut(150);
+    $("#timeline").fadeIn(250);
 });
 
 $(function() {
