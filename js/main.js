@@ -9,6 +9,10 @@ var upload = $("#upload");
 var uploadLink = $("#uploadLink");
 var festivalsLink = $("#festivalsLink");
 var timeline = $("#timeline");
+var future = $("#future");
+var futureLink = $("#futureLink");
+var about = $("#about");
+var aboutLink = $("#aboutLink");
 var timelineDay = $("#timelineDay");
 var dayOneButton = $("#dayOneButton");
 var dayTwoButton = $("#dayTwoButton");
@@ -22,6 +26,29 @@ var timelineLinks = $("#timeline a");
 
 $('img').on('dragstart', function (event) {
     event.preventDefault();
+});
+
+futureLink.click(function () {
+    future.fadeIn(250);
+    $(".flex-item").fadeOut(150);
+    timeline.fadeOut(150);
+    timelineDay.fadeOut(150);
+    dayOne.fadeOut(150);
+    upload.fadeOut(150);
+    dayTwo.fadeOut(150);
+    dayThree.fadeOut(150);
+    about.fadeOut(150);
+});
+
+aboutLink.click(function () {
+    $(".flex-item").fadeOut(150);
+    timeline.fadeOut(150);
+    timelineDay.fadeOut(150);
+     dayOne.fadeOut(150);
+    dayTwo.fadeOut(150);
+    dayThree.fadeOut(150);
+    about.fadeIn(250);
+    future.fadeOut(150);
 });
 
 enterButton.click(function () {
@@ -41,6 +68,8 @@ uploadLink.click(function () {
      dayOne.fadeOut(150);
     dayTwo.fadeOut(150);
     dayThree.fadeOut(150);
+    future.fadeOut(150);
+    about.fadeOut(150);
 });
 
 $(".return").click(function () {
@@ -57,6 +86,8 @@ festivalsLink.click(function () {
      dayOne.fadeOut(150);
     dayTwo.fadeOut(150);
     dayThree.fadeOut(150);
+    future.fadeOut(150);
+    about.fadeOut(150);
 });
 
 timelineLinks.click(function (){

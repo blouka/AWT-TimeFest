@@ -22,7 +22,12 @@ header a {
     text-transform: uppercase;
     cursor: pointer;
 }
-
+#future {
+    display: none;
+    text-align: center;
+} #future img {
+    width: 50%;
+} 
 .days {
     background-color: white;
     width: 100%;
