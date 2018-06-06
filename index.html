@@ -1,102 +1,82 @@
-<!DOCTYPE html>
-
-
-<html>
+<!doctype html>
+<html class="no-js" lang="">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" type=image/png href=img/TimeFestLogo.png>
-    <meta charset=UTF-8>
-    <meta name=viewport content="width=1440px, maximum-scale=1.0">
-    <meta name=author content="Launchpad by Anima">
 </head>
 
-<body style="margin: 0;
- background: rgba(255, 255, 255, 1.0);">
-    <input type=hidden id=anPageName name=page value=homepage>
-    <div class=homepage >
-        <div style="width: 1440px; height: 100%; position:relative; margin:auto;"><img class=glasto src=img/glasto.jpg>
-            <div class=rectangle href=homepage.html></div><img class=whitelogo src=img/whitelogo.png>
-            <div class=rectangle2><a href=homepage.html></div>
-            <div class=enter>Enter</div></a>
-        </div>
+<body>
+    <header>
+        <a id="festivalsLink">Festivals</a>
+        <a id="uploadLink">Upload</a>
+        <img id="headerLogo" src="img/logo.png">
+        <a href="#">Future Events</a>
+        <a href="#">About Us</a>
+    </header>
+    
+    <div class="fullscreen-bg">
+            <img id="logoBig" src="img/logo.png">
+        <br>
+<!--        <button id="enterButton">enter</button>-->
+
+        <div class="box"><button class="button button--aylen button--border-thick button--inverted button--text-upper button--size-s" id="enterButton">enter</button></div>
+        
+        
+        
+<!--        poster="img/videoframe.jpg"-->
+    <video loop muted autoplay class="fullscreen-bg__video">
+        <source src="video/crowd.mp4" type="video/mp4">
+    </video>
+</div>
+
+    <div id="flex-container">
+        <div class="flex-item"><img class="tintImg" src="img/glastonbury.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/lovebox.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/parklife.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/bestival.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/v-festival.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/wireless.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/isleofwight.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/reading.png"></div>
+        <div class="flex-item"><img class="tintImg" src="img/creamfield.png"></div>
     </div>
+
+    <div id="upload">
+        <img src="img/upload.png">
+    </div>
+    
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
-        anima_isHidden = function (e) {
-            if (!(e instanceof HTMLElement)) return !1;
-            if (getComputedStyle(e).display == "none") return !0;
-            else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
-            return !1
-        };
-        anima_loadAsyncSrcForTag = function (tag) {
-            var elements = document.getElementsByTagName(tag);
-            var toLoad = [];
-            for (var i = 0; i < elements.length; i++) {
-                var e = elements[i];
-                var src = e.getAttribute("src");
-                var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
-                if (loaded) continue;
-                var asyncSrc = e.getAttribute("anima-src");
-                if (asyncSrc == undefined || asyncSrc.length == 0) continue;
-                if (anima_isHidden(e)) continue;
-                toLoad.push(e)
-            }
-            toLoad.sort(function (a, b) {
-                return anima_getTop(a) - anima_getTop(b)
-            });
-            for (var i = 0; i < toLoad.length; i++) {
-                var e = toLoad[i];
-                var asyncSrc = e.getAttribute("anima-src");
-                e.setAttribute("src", asyncSrc)
-            }
-        };
-        anima_pauseHiddenVideos = function (tag) {
-            var elements = document.getElementsByTagName("video");
-            for (var i = 0; i < elements.length; i++) {
-                var e = elements[i];
-                var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
-                var isHidden = anima_isHidden(e);
-                if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
-                    e.play()
-                } else if (isPlaying && isHidden) {
-                    e.pause()
-                }
-            }
-        };
-        anima_loadAsyncSrc = function (tag) {
-            anima_loadAsyncSrcForTag("img");
-            anima_loadAsyncSrcForTag("iframe");
-            anima_loadAsyncSrcForTag("video");
-            anima_pauseHiddenVideos()
-        };
-        var anima_getTop = function (e) {
-            var top = 0;
-            do {
-                top += e.offsetTop || 0;
-                e = e.offsetParent
-            } while (e);
-            return top
-        };
-        anima_loadAsyncSrc();
-        anima_old_onResize = window.onresize;
-        anima_new_onResize = undefined;
-        anima_updateOnResize = function () {
-            if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
-                anima_new_onResize = function (x) {
-                    if (anima_old_onResize != undefined) anima_old_onResize(x);
-                    anima_loadAsyncSrc()
-                }
-                window.onresize = anima_new_onResize;
-                setTimeout(function () {
-                    anima_updateOnResize()
-                }, 3000)
-            }
-        };
-        anima_updateOnResize();
-        setTimeout(function () {
-            anima_loadAsyncSrc()
-        }, 200)
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
     </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
