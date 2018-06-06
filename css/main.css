@@ -699,10 +699,14 @@ Patterns - reusable parts of our design
     
     #flex-container {
         flex-wrap: wrap;
-    } .flex-item {
+    } 
+}
+@media only screen and (max-width: 680px) {
+.flex-item {
         width: 40%;
     }
 }
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline__container::before {
     left: 50%;
